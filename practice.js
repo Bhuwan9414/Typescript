@@ -56,3 +56,4 @@ async function getData() {
 }
 
 console.log(getData());
+
