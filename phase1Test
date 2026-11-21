@@ -1,0 +1,8 @@
+1. Typeannotation means explicitly deifining the type of the variable we are declaring only that type of value can be assigend to it then where as typeinference means the type of variable is not specified the compiler decides its type based on the assigned value.
+2. because we have defiend the type as number but we are assigning string
+3. void returns nothing and number return a number type value
+4. alex and undefined
+5. we are pushing a number type variable to a string type array which will throw a type error
+6. yes this code is valid because quantity agument is given a default value when none is provided 
+7. ts will throw an error saying return type is not correct
+8. 

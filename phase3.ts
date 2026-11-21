@@ -226,12 +226,27 @@
 
 // console.log(response);
 
-function mergeData<T, U>(first: T, second: U){
+// function mergeData<T, U>(first: T, second: U){
 
-    return {first,second}
+//     return {first,second}
 
+// }
+
+// const response = mergeData("workout", 100);
+
+// console.log(response);
+
+// generics constraints
+
+function getId<T extends { id: number }>(data: T): number {
+    return data.id
 }
 
-const response = mergeData("workout", 100);
+const data = getId({ id: 1, name: "Alex" });
 
-console.log(response);
+console.log(data);
+
+
+getId({ id: 2, title: "Workout" });
+
+getId({id: 3, name: "Alex" }); // Error: id is missing
